@@ -1,0 +1,17 @@
+package com.ntt.demo1.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Tv extends Monitor{
+    private int canale;
+    private long id;
+
+    private ArrayList<Canale> canali = new ArrayList<>(canale);
+}
